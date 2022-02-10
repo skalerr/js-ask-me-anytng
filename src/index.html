@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.muicss.com/mui-latest/css/mui.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+<!-- старое подключение ццс сделал через апп жс -->
+<!-- <link href="static/style.css" rel="stylesheet" type="text/css" /> -->
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <title>Site example</title>
+  </head>
+  <body>
+    <button class="mui-btn mui-btn--fab mui-btn--danger floating-btn" id="modalBtn">Все</button>
+    <div id="sidebar">
+      <div class="mui--text-white mui--text-display1 mui--align-vertical">ASK ME ANYTHING</div>
+      
+    </div>
+    <div id="content" class="mui-container-fluid">
+      <div class="mui-row">
+        <div class="mui-col-sm-10 mui-col-sm-offset-1">
+          <br />
+          <br />
+          <div class="mui--text-black-54 mui--text-body2">
+            ЗАДАЙ СВОЙ ВОПРОС
+            <br />
+            
+          </div>
+          <div class="mui-divider"></div>
+          <br />
+<!-- FORMA!!!!!!!!!!! -->
+          <form class="mui-form" id="form">
+<!-- <legend>Nazvanie</legend> -->
+            <div 
+            class="mui-textfield mui-textfield--float-label" 
+            required minlength="10"
+            required maxlength="250"
+            >
+              <input type="text" id="question-input">
+              <label for="question-input">Что хочешь спросить?</label>
+            </div>
+<!--   КНОПОЧКА -->
+            <button type="submit" 
+            class="mui-btn mui-btn--raised mui-btn--primary"
+            id="submit"
+            disabled
+            >
+              Задай вопрос
+            </button>
+          </form>
+          <br />
+          <br />
+          <div class="mui--text-black-54 mui--text-body2">ВАШИ ВОПРОСЫ</div>
+          <div class="mui-divider"></div>
+          <br />
+          <div id="list"></div>
+<!-- шаблон -->
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- доп кнопки -->
+<!-- <div class="mui-textfield mui-textfield--float-label">
+              <input type="text" value="Value on load">
+              <label>КНопака 2</label>
+            </div>
+            <div class="mui-textfield mui-textfield--float-label">
+              <textarea>поле</textarea>
+              <label>Textarea</label>
+            </div> -->
